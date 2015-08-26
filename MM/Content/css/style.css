@@ -1,0 +1,153 @@
+﻿
+.disnone {
+    display: none;
+}
+
+[ms-controller], [ms-important] {
+    display: none;
+}
+
+
+.TdFilterPro input {
+    width: 120px;
+    background-color: #fcf1f0;
+}
+
+
+.search .text .change {
+    height: 32px;
+    padding: 0 10px;
+    border-right: 1px solid #a1a1a1;
+    line-height: 32px;
+    background: #f3f3f3;
+    font-size: 14px;
+    color: #777;
+    cursor: pointer;
+}
+.search dl {
+    margin-top: 10px;
+}
+
+
+.TableRules {
+    width: 80%;
+}
+
+    .TableRules td {
+        width: 100px;
+        border: 1px gray;
+    }
+
+
+.ul-material {
+    float: left;
+    background: #e0e0e0;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-family: 'Microsoft YaHei', 微软雅黑;
+    font-size: 12px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: center;
+    width: 168px;
+    zoom: 1;
+    max-height: 300px;
+    overflow-x: hidden;
+}
+
+    .ul-material li a {
+        color: rgb(153, 153, 153);
+        cursor: auto;
+        display: block;
+        font-family: 'Microsoft YaHei', 微软雅黑;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        list-style-image: none;
+        list-style-position: outside;
+        list-style-type: none;
+        text-align: center;
+        text-decoration: none;
+        width: 168px;
+        zoom: 1;
+        margin-right: 0;
+    }
+
+        .ul-material li a:hover {
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgb(153, 128, 236);
+            background-image: none;
+            background-origin: padding-box;
+            background-size: auto;
+            color: rgb(226, 226, 226);
+            cursor: auto;
+            width: 168px;
+        }
+
+    .ul-material li .active {
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: rgb(234, 85, 65);
+        background-image: none;
+        background-origin: padding-box;
+        background-size: auto;
+        color: rgb(226, 226, 226);
+        cursor: auto;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        list-style-image: none;
+        list-style-position: outside;
+        list-style-type: none;
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+.whtext {
+    border: 1px solid;
+    height: 30px;
+    width: 204px;
+    border-color: #808080;
+    text-indent: 10px;
+}
+
+.TdInput {
+    border: 1px solid #f29285;
+    height: 20px;
+    width: 204px;
+    text-indent: 10px;
+}
+
+.table  .ChkTd {
+    width: 20px;
+    height: 20px;
+    line-height: 30px;
+}
+
+
+/*table底部的分页样式*/
+
+.searchfoot {
+    padding: 0 0 0 20px;
+    background:#fdeeec;
+}
+.searchfoot .pagesize {
+     float: left;
+    width: 250px;
+   padding:15px 0 0 0;
+}
+.searchfoot .page {
+    float: left;
+   
+}

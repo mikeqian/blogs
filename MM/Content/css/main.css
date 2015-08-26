@@ -1,0 +1,174 @@
+﻿@charset "utf-8";
+
+.head{ height:60px; background:#ea5541;}
+.head .logo{ float:left; width:149px; height:60px; border-right:1px solid #da432e; overflow:hidden;}
+.head .logo a{ position:relative; display:block; width:148px; padding:60px 0 0; border-right:1px solid #f97462; background:url(../img/logo.png) no-repeat center;}
+.head .logo .icon_logo{ position:absolute; left:9px; top:12px; width:129px; height:36px; background:url(../img/facyory.png) no-repeat 0 0; overflow:hidden;}
+.head .info{ float:left; width:1130px; height:60px;}
+.head .info .name{ float:left; padding:0 0 0 20px; line-height:60px; font-size:18px; font-weight:bold; color:#fff;}
+.head .info .out{ float:right; width:90px; height:40px; margin:10px 0; border-left:1px solid #da432e; line-height:40px; font-size:14px; text-align:center;}
+.head .info .out a{ color:#fff;}
+.head .info .user{ float:right; width:500px; height:40px; margin:10px 0; border-right:1px solid #f97462; line-height:40px; font-size:14px; text-align:right; color:#fff;}
+.head .info .icon_user{ display:inline-block; width:36px; height:36px; margin:2px 15px 0; background:url(../img/facyory.png) no-repeat -130px 0; overflow:hidden; vertical-align:-12px;}
+
+
+.main{ overflow:hidden;}
+.main .menu{ float:left; width:150px; background:#43494d; margin:0 0 -9999px; padding:0 0 9999px; overflow:hidden;}
+.main .menu h2{ height:54px; line-height:54px; background:#ccc; font-size:16px; font-weight:normal; text-align:center;}
+.main .menu h2 i{ margin:0 0 0 10px; font-size:20px; vertical-align:-2px;}
+.main .menu .item h3 a{ display:block; height:60px; padding:0 0 0 10px; border-left:4px solid #43494d; line-height:60px; color:#b0b9bf;}
+.main .menu .item h3 a span{ margin:0 25px 0 10px; font-size:14px; font-weight:bold;}
+.main .menu .item h3 a:hover{ color:#ccc;}
+.main .menu .item h3.group a{ height:48px; line-height:48px;}
+.main .menu .item.active{ background:#2f3336;}
+.main .menu .item.active h3 a{ border-left-color:#ea5541; color:#2aaaeb;}
+.main .menu .item.active h3.group a{ background:#43494d; color:#fff;}
+.main .menu .item ul{ padding:10px 0; border-left:1px solid #308fbf; background:#2f3336;}
+.main .menu .item ul li{ height:36px; line-height:36px;}
+.main .menu .item ul li a{ display:block; height:36px; padding:0 0 0 35px; color:#b0b9bf; font-size:14px;}
+.main .menu .item ul li a:hover{ color:#ccc;}
+.main .menu .item ul li a.selectd{ color:#ea5541;}
+
+.main .content{ float:left; width:1090px; padding:54px 0 0;}
+.main .content .crumb{ height:48px; padding:0 0 0 15px; line-height:48px; background:#f5f5f5; font-size:15px; color:#666;}
+.main .content .crumb span{ color:#ea5541;}
+.main .content .boxs{ padding:15px; background:#fff;}
+.main .content .box{ position:relative; margin:0 0 20px; border-width:1px; border-style:solid; border-color:#e5e5e5 #c3c3c3 #c3c3c3 #e5e5e5; border-radius:5px; box-shadow:0 1px 1px #ccc; background:#fff; overflow:hidden;}
+
+.main .content .box .search{ padding:15px 0; background:#fdeeec;}
+.main .content .box .search dt{ float:left; width:70px; height:34px; padding:0 15px 0 0; line-height:34px; text-align:right; color:#424547;}
+.main .content .box .search dd{ float:left; margin:0 10px 0 0;}
+.main .content .box .search select{ min-width: 90px;}
+.main .content .box .search .text input{ width:140px; height:20px; padding:6px 0; border:1px solid #f29285; border-radius:3px; line-height:20px; font-size:12px; text-indent:10px;}
+.main .content .box .search .select select{ width:142px; height:34px; border:1px solid #f29285; border-radius:3px;}
+.main .content .box .search .btn a{ display:block; width:80px; height:34px; border-radius:3px; line-height:34px; background:#ea5541; font-size:14px; color:#fff; text-align:center;}
+.main .content .box .search .btn1 a{ display:block; width:120px; height:34px; border-radius:3px; line-height:34px; background:#ea7160; font-size:14px; color:#fff; text-align:center;}
+.main .content .box .search .btn2 a{ display:block; width:80px; height:34px; border-radius:3px; line-height:34px; background:#acacac; font-size:14px; color:#fff; text-align:center;}
+.main .content .box .table{ padding:0 0 20px;}
+.main .content .box .table .bg{ background:#fcf1f0;}
+.main .content .box .table table{ color:#424547;}
+.main .content .box .table tbody tr:hover{ background:#fcf1f0;}
+.main .content .box .table th{ height:35px;font-size: 15px;font-weight: bold; border-bottom:1px solid #e5e5e5; color:#616466;}
+.main .content .box .table td{ height:35px;font-size: 12px; border-bottom:1px solid #e5e5e5; text-align:center;}
+.main .content .box .table td td{ padding:0 0 0 30px; border-bottom:none; background:#f8f8f8; text-align:left;}
+.main .content .box .table td span{ font-size:14px;}
+.main .content .box .table td .table1{ height:200px; border:1px solid #ea5541; overflow-y:auto;}
+.main .content .box .table .orangebtn{ display:inline-block; width:52px; height:24px; line-height:24px; background:#ea5541; color:#fff; text-align:center;}
+.main .content .box .table .graybtn{ display:inline-block; width:52px; height:24px; margin:0 0 0 10px; line-height:24px; background:#ccc; color:#fff; text-align:center;}
+.main .content .box .table label{ cursor:pointer;}
+.main .content .box .table .icon_input{ display:inline-block; width:16px; height:16px; margin:0 15px 0 0; background:url(../img/facyory.png) no-repeat -111px -94px; overflow:hidden; vertical-align:-4px;}
+.main .content .box .table .icon_input.active{ background-position:-128px -94px;}
+.main .content .box .table td .arrow{ display:none; position:relative;}
+.main .content .box .table td .arrow i{ position:absolute; left:160px; top:27px; width:21px; height:12px; background:url(../img/arrow.png) no-repeat;}
+
+
+.page{ height:28px; padding:15px 0 0; line-height:28px; font-size:14px; text-align:center; color:#333;}
+.page a:hover{ text-decoration:none;}
+.page .total{ margin:0 6px 0 0;}
+.page .more{ margin:0 6px 0 0; color:#a2adb8;}
+.page .prev,
+.page .next{ display:inline-block; width:24px; height:24px; margin:0 6px 0 0; border:2px solid #ccc; border-radius:50%; line-height:24px; background:#fff; text-align:center; color:#999; font-weight:bold; font-family:"宋体";}
+.page .prev.no,
+.page .next.no{ border-color:#e6e6e6; color:#ccc;}
+.page .num{ display:inline-block; width:24px; height:24px; margin:0 6px 0 0; border:2px solid #ccc; border-radius:50%; line-height:24px; background:#fff; text-align:center; color:#999;}
+.page .num.active{ border-color:#ea5541; background:#ea5541; color:#fff;}
+.page input{ width:24px; height:24px; margin:0 6px 0 0; border:2px solid #ccc; border-radius:50%; line-height:24px; background:#fff; text-align:center; color:#999; outline:none;}
+.page .go{ display:inline-block; width:24px; height:24px; margin:0 6px 0 0; border:2px solid #ea5541; border-radius:50%; line-height:24px; background:#ea5541; text-align:center; color:#fff;}
+
+
+.mask{ display:none; width:540px; padding:0 0 22px; border-bottom:6px solid #ea5541; background:#fff;}
+.mask.mask_tip{ width:440px;}
+.mask.mask_allot{ width:490px;}
+.mask.mask_add{ width:490px;}
+.mask.mask_manage{ width:1150px;}
+.mask .title{ height:44px; line-height:44px; background:#e6e6e6;}
+.mask .title h2{ font-size:16px; color:#ea5541; text-indent:25px;}
+.mask .title a{ float:right; margin:0 20px 0 0;}
+.mask .title a i{ font-size:20px; color:#666;}
+.mask .choose{ padding:0 0 30px; text-align:center;}
+.mask .choose p{ line-height:50px; font-size:14px; color:#999;}
+.mask .choose h3{ height:36px; line-height:36px; font-size:14px;}
+.mask .choose ul{ height:auto; overflow:auto;max-height: 210px}
+.mask .choose .left{ float:left; width:185px; margin:0 0 0 85px; background:#ededed; color:#fff;}
+.mask .choose .left h3{  background:#e2e2e2; color:#666;}
+.mask .choose .left a{ display:block; line-height:30px; color:#999;}
+.mask .choose .left a.active{ background:#ea5541 ; color:#e2e2e2;}
+.mask .choose .right a.active{ background:#ea5541 ; color:#e2e2e2;}
+.mask .choose .right{ float:left; width:185px; background:#ededed; color:#fff;}
+.mask .choose .right h3{ background:#e2e2e2; color:#666;}
+.mask .choose .right a{ display:block; line-height:30px; color:#999;}
+.mask .button{ height:32px; text-align:center;}
+.mask .button a{ display:inline-block; width:80px; height:32px; margin:0 30px; border-radius:4px; line-height:32px; color:#fff; text-align:center;}
+.mask .button a.orange{ background:#ea5541;}
+.mask .button a.gray{ background:#d9d9d9;}
+.mask .text{ height:110px; padding:90px 0 0 190px; background:url(../img/cat2.jpg) no-repeat 60px 50px; font-size:18px; color:#ea5541;}
+.mask .text.cat{ background:url(../img/cat1.jpg) no-repeat 60px 50px;}
+
+
+.mask .box{ height:450px; padding:30px 0 0 45px;}
+.mask .box .search{ padding:0 0 15px;}
+.mask .box .search dd{ float:left; margin:0 10px 0 0;}
+.mask .box .search .texts input{ width:140px; height:20px; padding:6px 0; border:1px solid #f29285; border-radius:3px; line-height:20px; font-size:12px; text-indent:10px;}
+.mask .box .search .btn a{ display:block; width:80px; height:34px; border-radius:3px; line-height:34px; background:#ea5541; font-size:14px; color:#fff; text-align:center;}
+.mask .box .btns{ width:70px; margin:150px 20px 0 0;}
+.mask .box .btns a{ display:block; width:70px; height:26px; margin:0 0 10px; padding:0; line-height:26px; color:#fff; text-align:center;}
+.mask .box .btns a.yellowbtn{ background:#eb932f;}
+.mask .box .btns a.graybtn{ background:#b0b5bf;}
+.mask .box .item{ width:180px; height:370px; margin:0 20px 0 0;}
+.mask .box .item p{ width:168px; height:24px; padding:0 5px; line-height:24px; border:1px solid #ccc; background:#f5f5f5;}
+.mask .box .item input{ width:110px; height:14px; padding:5px; border:1px solid #ccc;}
+.mask .box .item .change{ display:inline-block; width:58px; height:26px; line-height:26px; background:#b0b5bf; color:#fff; text-align:center;}
+.mask .box .item .lis{ width:168px; height:330px; margin:2px 0 0; padding:5px; border:1px solid #ccc; background:#f8f8f8;}
+.mask .box .item .lis_box{ width:168px; height:329px; border-top:1px solid #ccc; overflow:hidden; overflow-y:auto}
+.mask .box .item .lis ul{ width:168px;}
+.mask .box .item .lis ul li{ position:relative; height:30px; border:1px solid #ccc; border-top:none; background:#fff;}
+.mask .box .item .lis ul a{ position:absolute; top:0; left:0; width:156px; height:30px; padding:0 5px; line-height:30px; color:#333; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.mask .box .item .lis ul a.active{ top:-1px; left:-1px; border:1px solid #eb932f; background:#ffffe0; color:#eb932f;}
+
+.mask .mallot{ padding:55px 0 55px 55px;}
+.mask .mallot p{ margin:0 0 40px;}
+.mask .mallot label{ margin:0 36px 0 0;}
+.mask .mallot label input{ margin:0 4px 0 0; vertical-align:-2px;}
+
+.mask .madd{ padding:50px 0 35px;}
+.mask .madd dl{ padding:0 0 15px;}
+.mask .madd dt{ width:145px; line-height:32px; text-align:right;}
+.mask .madd dd input{ width:270px; height:30px; border:1px solid #f2998d;}
+.mask .madd dd select{ width:272px; height:32px; border:1px solid #f2998d;}
+.mask .madd dd label{ margin:0 36px 0 0; line-height:32px;}
+.mask .madd dd label input{ width:auto; height:auto; margin:0 4px 0 0; vertical-align:-2px;}
+.mask .madd table{ margin:0 0 0 90px; border-collapse:collapse; font-size:14px;}
+.mask .madd th{ height:50px; border:1px solid #ccc; background:#f0f2f8; font-weight:normal;}
+.mask .madd td{ height:50px; border:1px solid #ccc; background:#ffffe0; text-align:center;}
+.mask .madd a{ display:inline-block; margin:10px 0 10px 280px; font-size:14px; color:#f2998d;}
+
+.mask .table table{ font-size:14px;}
+.mask .table th{ height:50px;}
+.mask .table td{ height:50px; border-top:1px solid #b7b7b7; text-align:center;margin-left: -1px;}
+.mask .table td select{ width:110px; height:32px; border:1px solid #f2998d;}
+.mask .table td input{ width:110px; height:30px; border:1px solid #f2998d;}
+.mask .table td a{ margin:0 10px; font-size:12px; color:#f2998d;}
+
+
+.login_box{ position: absolute; top:40%; left:50%; margin:-190px 0 0 -250px;}
+.login_box .login{ width:501px; height:379px; background:url(../img/bg.jpg) no-repeat;}
+.login_box .login h2{ padding:50px 0 35px; color:#fff; font-size:30px; font-weight:normal; text-indent:150px;}
+.login_box .login i{ margin:0 5px 0 0;}
+.login_box .login .user{ position:relative; width:302px; margin:30px 0 0 0; padding:0 0 0 99px;}
+.login_box .login .password{ position:relative; width:302px; margin:25px 0 0 0; padding:0 0 0 99px;}
+.login_box .login .user .fail,
+.login_box .login .password .fail{ position:absolute; top:44px; left:49px; width:295px; height:17px; padding:3px 0 0 5px; border:1px solid #fac1bb; border-top:0; line-height:12px; background:#ffeceb; color:#f21f0c;}
+.login_box .login .user input,
+.login_box .login .password input{ width:280px; height:22px; margin:0; padding:10px 5px 10px 15px; border:1px solid #ccc; border-radius:2px; background:#fff; line-height:22px; outline:none;}
+.login_box .login .user input.active,
+.login_box .login .password input.active{ border-color:#e65039;}
+.login_box .login .btn{ margin:25px 0 0; padding:0 0 0 99px;}
+.login_box .login .btn input{ width:302px; height:42px; border:none; border-bottom:3px solid #cc5256; line-height:36px; border-radius:3px; background:#f26166; text-align:center; font-size:18px; color:#fff; cursor:pointer;}
+.login_box .login .btn input:hover{ opacity:.9;}
+
+
+
+
+
+
+

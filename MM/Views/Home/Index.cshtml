@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>便当之神挖的坑</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="~/Content/img/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="~/Content/css/80925.css" rel="stylesheet" />
+    <link href="~/Content/css/style-min.css" rel="stylesheet" />
+
+</head>
+<body class="laycode">
+    <header class="layout" id="header">
+        <div class="container">
+            <a href="/" class="logo">
+                便当之神挖的坑
+            </a>
+        </div>
+    </header>
+    <div class="container" style="margin-top:10px;">
+        <div class="line">
+            <div class=xm9>
+
+                @foreach (var item in ViewBag.Blogs)
+                {
+                    <div id="Posts">
+                        <article class="blog-main">
+                            <header class="blog-title"><a href="#">开始挖第一个坑</a></header>
+                            <div class="blog-meta">
+                                <span>
+                                    <i class="icon-calendar"></i>@item.CreateTime
+                                </span>
+                                <a><span><i class="icon-folder-open"></i>技术探讨</span></a>
+                            </div>
+                            <section class="blog-content">
+                                @Html.Raw(item.Summary)
+                                <div style="text-align:right;padding-right:5px;"><a style="outline: none;" href="#" title="点点点，读读读">阅读全文</a></div>
+                            </section>
+                        </article>
+                    </div>
+                }
+                @*<div id="Page">
+                        <div class="pagination-right"><a href="/Home/Index/2" title="旧的回忆">下一页</a></div>
+                    </div> *@
+            </div>
+
+            <aside class="xm3 sidebar">
+                <div class="panel">
+                    <div class="panel-head icon-user">
+                        <strong>关于博主</strong>
+                    </div>
+                    <div class="panel-body text-center">
+                        <img onclick="location.href = '/Home/About'" src="/Content/img/me.png" width="96" class="img-border radius-circle" style="cursor:pointer;" title="别点，啊，好害羞~~(>_<) " />
+                        <h3><a href="#" title="关注我的微博" target="_self">便当之神(qq:156595517)</a></h3>
+                        <p class="text-left text-big" style="text-align:center;">有时写写博客，大部分时间不知道在干嘛</p>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-head icon-folder-open">
+                        <strong>博文分类</strong>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            @*<li style="cursor:pointer;">
+                                <a title="#1" href="/Home/Index/1/204">#1 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a title="#2" href="/Home/Index/1/238">#1 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a title="#3" href="/Home/Index/1/272">#1 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a title="#4" href="/Home/Index/1/306">#1 </a>
+                            </li>*@
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-head icon-sort-numeric-asc">
+                        <strong>最新文章</strong>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            @*<li style="cursor:pointer;">
+                                <a href="#1" title="#1">#1</a>
+                            </li>*@
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-head icon-link">
+                        <strong>友情链接</strong>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li style="cursor:pointer;">
+                                <a href="http://www.cnblogs.com/bnbqian/" title="你要去哪里？" target="_blank">我的博客园 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="http://linuxdot.net/" title="你要去哪里？" target="_blank">Linux.NET大本营 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="http://www.so-love.com/" title="你要去哪里？" target="_blank">至爱分享 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="http://www.asquestion.com/" title="你要去哪里？" target="_blank">Questions </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="http://beginor.github.io/" title="你要去哪里？" target="_blank">张志敏的技术专栏 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="https://jexus.codeplex.com" title="你要去哪里？" target="_blank">Jexus英文站 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="http://www.cnblogs.com/shanyou" title="你要去哪里？" target="_blank">张善友的园子 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="http://yimingzhi.net/" title="你要去哪里？" target="_blank">衣明志的技术博客 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="http://blog.zhaojie.me/" title="你要去哪里？" target="_blank">老赵点滴 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="http://www.olexe.cn/" title="你要去哪里？" target="_blank">小白的站子 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="http://www.pwmis.com/sqlmap" title="你要去哪里？" target="_blank">PDF.NET SOD官网 </a>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <a href="http://lvwenhan.com/convertico/" title="你要去哪里？" target="_blank">在线转icon</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="copyright">
+            <a style="outline:none;" href="http://www.miibeian.gov.cn/" target="_blank">浙ICP备14059150号</a>
+        </div>
+    </footer>
+    <div class="go-top" title="登月火箭">
+        <a href="javascript:;" class="win-backtop"><i class="icon-arrow-circle-up"></i></a>
+    </div>
+    <script src="~/Content/libs/Jquery/jquery.min.js"></script>
+</body>
+</html>
