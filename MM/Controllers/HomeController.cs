@@ -11,5 +11,10 @@ namespace Mike.MM.Controllers
 
             return View();
         }
+
+        public ActionResult AboutMe()
+        {
+            return View();
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DataAccess.Dao;
 using MM.Domain.Entity;
 
 namespace Application
@@ -8,15 +9,22 @@ namespace Application
     {
         public static List<Blog> GetBlogs()
         {
-            var result = new List<Blog>();
+            return BlogDao.GetAllBlogs();
+        }
 
-            var t = new Blog();
-            t.CreateTime = new DateTime(2015, 8, 26, 13, 30, 0, 0);
-            t.Summary = "<p>&nbsp;&nbsp;直接抢劫了现成的模板,在网络上挖上一个专属自己的坑。</p>";
+        public static void AddBlog(Blog blog)
+        {
+            BlogDao.Create(blog);
+        }
 
-            result.Add(t);
+        public static void UpdateBlog(Blog blog)
+        {
+            BlogDao.Update(blog);
+        }
 
-            return result;
+        public static void DeleteBloe(string id)
+        {
+            BlogDao.Delete(id);
         }
     }
 }

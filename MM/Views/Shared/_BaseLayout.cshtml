@@ -24,28 +24,7 @@
     <div class="container" style="margin-top:10px;">
         <div class="line">
             <div class=xm9>
-
-                @foreach (var item in ViewBag.Blogs)
-                {
-                    <div id="Posts">
-                        <article class="blog-main">
-                            <header class="blog-title"><a href="#">开始挖第一个坑</a></header>
-                            <div class="blog-meta">
-                                <span>
-                                    <i class="icon-calendar"></i>@item.CreateTime
-                                </span>
-                                <a><span><i class="icon-folder-open"></i>技术探讨</span></a>
-                            </div>
-                            <section class="blog-content">
-                                @Html.Raw(item.Summary)
-                                <div style="text-align:right;padding-right:5px;"><a style="outline: none;" href="#" title="点点点，读读读">阅读全文</a></div>
-                            </section>
-                        </article>
-                    </div>
-                }
-                @*<div id="Page">
-                        <div class="pagination-right"><a href="/Home/Index/2" title="旧的回忆">下一页</a></div>
-                    </div> *@
+                @RenderBody()
             </div>
 
             <aside class="xm3 sidebar">
@@ -54,7 +33,7 @@
                         <strong>关于博主</strong>
                     </div>
                     <div class="panel-body text-center">
-                        <img onclick="location.href = '/Home/About'" src="/Content/img/me.png" width="96" class="img-border radius-circle" style="cursor:pointer;" title="别点，啊，好害羞~~(>_<) " />
+                        <img onclick="location.href = '/Home/AboutMe'" src="/Content/img/me.png" width="96" class="img-border radius-circle" style="cursor:pointer;" title="别点，啊，好害羞~~(>_<) " />
                         <h3><a href="~/Home/AboutMe" title="关注我的微博" target="_self">便当之神</a></h3>
                         <p class="text-left text-big" style="text-align:center;">有时写写博客，大部分时间不知道在干嘛</p>
                     </div>
@@ -66,17 +45,17 @@
                     <div class="panel-body">
                         <ul class="list-group">
                             @*<li style="cursor:pointer;">
-                                <a title="#1" href="/Home/Index/1/204">#1 </a>
-                            </li>
-                            <li style="cursor:pointer;">
-                                <a title="#2" href="/Home/Index/1/238">#1 </a>
-                            </li>
-                            <li style="cursor:pointer;">
-                                <a title="#3" href="/Home/Index/1/272">#1 </a>
-                            </li>
-                            <li style="cursor:pointer;">
-                                <a title="#4" href="/Home/Index/1/306">#1 </a>
-                            </li>*@
+                                    <a title="#1" href="/Home/Index/1/204">#1 </a>
+                                </li>
+                                <li style="cursor:pointer;">
+                                    <a title="#2" href="/Home/Index/1/238">#1 </a>
+                                </li>
+                                <li style="cursor:pointer;">
+                                    <a title="#3" href="/Home/Index/1/272">#1 </a>
+                                </li>
+                                <li style="cursor:pointer;">
+                                    <a title="#4" href="/Home/Index/1/306">#1 </a>
+                                </li>*@
                         </ul>
                     </div>
                 </div>
@@ -87,8 +66,8 @@
                     <div class="panel-body">
                         <ul class="list-group">
                             @*<li style="cursor:pointer;">
-                                <a href="#1" title="#1">#1</a>
-                            </li>*@
+                                    <a href="#1" title="#1">#1</a>
+                                </li>*@
                         </ul>
                     </div>
                 </div>
