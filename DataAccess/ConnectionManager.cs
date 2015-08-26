@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Configuration;
-using System.Data.SQLite;
+using Mono.Data.Sqlite;
 using System.IO;
 
 namespace DataAccess
@@ -13,14 +13,14 @@ namespace DataAccess
         }
 
 
-        public static SQLiteConnection GetConnection()
+        public static SqliteConnection GetConnection()
         {
             if (!File.Exists(DbFile))
             {
                 throw new Exception("db file does not exist,pls check the config file.");
             }
 
-            return new SQLiteConnection("Data Source=" + DbFile);
+            return new SqliteConnection("Data Source=" + DbFile);
         }
     }
 }
