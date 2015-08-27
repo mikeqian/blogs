@@ -9,11 +9,26 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>C:\Users\luhan.qian\Desktop\rubbish\mono</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="bin/Application.dll">
+      <publishTime>08/27/2015 09:24:27</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>08/26/2015 12:58:54</publishTime>
+    </File>
+    <File Include="bin/DataAccess.dll">
+      <publishTime>08/27/2015 09:24:26</publishTime>
+    </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>08/25/2015 16:20:34</publishTime>
     </File>
     <File Include="bin/Mike.MM.dll">
-      <publishTime>08/26/2015 11:31:05</publishTime>
+      <publishTime>08/27/2015 09:24:28</publishTime>
+    </File>
+    <File Include="bin/MM.Domain.Entity.dll">
+      <publishTime>08/26/2015 16:23:38</publishTime>
+    </File>
+    <File Include="bin/Mono.Data.Sqlite.dll">
+      <publishTime>08/27/2015 09:20:47</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>08/07/2015 15:00:39</publishTime>
@@ -259,16 +274,43 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/25/2015 14:52:29</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>08/25/2015 16:20:37</publishTime>
+      <publishTime>08/27/2015 09:20:47</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>08/26/2015 15:50:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>08/26/2015 15:50:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>08/26/2015 15:50:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>08/26/2015 15:50:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>08/26/2015 15:50:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>08/26/2015 15:50:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>08/26/2015 15:50:42</publishTime>
+    </File>
+    <File Include="Views/Home/AboutMe.cshtml">
+      <publishTime>08/26/2015 16:02:45</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>08/26/2015 11:17:30</publishTime>
+      <publishTime>08/26/2015 16:05:55</publishTime>
+    </File>
+    <File Include="Views/Shared/_BaseLayout.cshtml">
+      <publishTime>08/26/2015 15:57:07</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>08/25/2015 16:24:58</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/26/2015 11:31:05</publishTime>
+      <publishTime>08/27/2015 09:24:28</publishTime>
     </File>
   </ItemGroup>
 </Project>
