@@ -26,5 +26,10 @@ namespace Application
         {
             BlogDao.Delete(id);
         }
+
+        public static Blog GetBlog(string id)
+        {
+            return BlogDao.GetBlog(id);
+        }
     }
 }

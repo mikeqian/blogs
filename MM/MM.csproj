@@ -285,6 +285,7 @@
     <Content Include="Content\libs\ueditor\dialogs\wordimage\tangram.js" />
     <Content Include="Content\libs\ueditor\dialogs\wordimage\wordimage.html" />
     <Content Include="Content\libs\ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="Content\libs\ueditor\index - Copy.html" />
     <Content Include="Content\libs\ueditor\index.html" />
     <Content Include="Content\libs\ueditor\lang\en\en.js" />
     <Content Include="Content\libs\ueditor\lang\en\images\addimage.png" />
@@ -430,26 +431,21 @@
     <Content Include="Content\libs\underscore\underscore-min.map" />
     <Content Include="Content\libs\ueditor\net\config.json" />
     <Content Include="Content\libs\ueditor\net\controller.ashx" />
-    <Content Include="Content\libs\ueditor\net\README.md" />
     <Content Include="Content\libs\ueditor\net\Web.config" />
     <Content Include="Content\libs\ueditor\third-party\jquery-1.10.2.min.map" />
     <Content Include="Content\libs\ueditor\third-party\video-js\font\vjs.eot" />
     <Content Include="Content\libs\ueditor\third-party\video-js\font\vjs.ttf" />
     <Content Include="Content\libs\ueditor\third-party\video-js\font\vjs.woff" />
+    <Content Include="config.json" />
     <None Include="Properties\PublishProfiles\tt.pubxml" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Public\util.js" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\web.config" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\AboutMe.cshtml" />
     <Content Include="Views\Shared\_BaseLayout.cshtml" />
+    <Content Include="Views\Home\Add.cshtml" />
+    <Content Include="Views\Blog\Detail.cshtml" />
+    <Content Include="Views\Blog\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -463,6 +459,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApiControllers\BlogController.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Content\libs\ueditor\net\App_Code\Config.cs" />
@@ -473,11 +470,14 @@
     <Compile Include="Content\libs\ueditor\net\App_Code\NotSupportedHandler.cs" />
     <Compile Include="Content\libs\ueditor\net\App_Code\PathFormater.cs" />
     <Compile Include="Content\libs\ueditor\net\App_Code\UploadHandler.cs" />
-    <Compile Include="Controllers\ConfigController.cs" />
+    <Compile Include="ApiControllers\ConfigController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Base\BasePagerModel.cs" />
+    <Compile Include="Models\Base\JsonResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -490,7 +490,9 @@
       <Name>Entity</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Scripts\Pages\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

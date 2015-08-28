@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace WebApplication1.Controllers
+namespace Mike.MM.ApiControllers
 {
     public class ConfigController : ApiController
     {
@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
         [Route("api/mm")]
         public object GetConfigByAppNo()
         {
-            return "111";
+            return "Hello MM!";
         }
     }
 }

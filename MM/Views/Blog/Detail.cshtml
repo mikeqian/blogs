@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<div id="Posts">
+    <article class="blog-main">
+        <header class="blog-title"><a href="#">@ViewBag.Blog.Title</a></header>
+        <div class="blog-meta">
+            <span>
+                <i class="icon-calendar"></i>@ViewBag.Blog.CreateTime
+            </span>
+            <a><span><i class="icon-folder-open"></i>技术探讨</span></a>
+        </div>
+        <section class="blog-content">
+            @Html.Raw(ViewBag.Blog.Content)
+        </section>
+    </article>
+</div>

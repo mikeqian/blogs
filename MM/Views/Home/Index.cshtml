@@ -6,7 +6,7 @@
 {
     <div id="Posts">
         <article class="blog-main">
-            <header class="blog-title"><a href="#">开始挖第一个坑</a></header>
+            <header class="blog-title"><a href="#">@item.Title</a></header>
             <div class="blog-meta">
                 <span>
                     <i class="icon-calendar"></i>@item.CreateTime
@@ -15,7 +15,7 @@
             </div>
             <section class="blog-content">
                 @Html.Raw(item.Summary)
-                <div style="text-align:right;padding-right:5px;"><a style="outline: none;" href="#" title="点点点，读读读">阅读全文</a></div>
+                <div style="text-align:right;padding-right:5px;"><a style="outline: none;" href="~/blog/@item.ID" title="点点点，读读读">阅读全文</a></div>
             </section>
         </article>
     </div>
