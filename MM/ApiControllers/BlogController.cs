@@ -8,6 +8,15 @@ namespace Mike.MM.ApiControllers
 {
     public class BlogController : ApiController
     {
+        [HttpGet]
+        [Route("api/blog/{id}")]
+        public object Get(string id)
+        {
+            var blog = BlogManager.GetBlog(id);
+
+            return new JsonResponseModel { Success = true, Result = blog };
+        }
+
         [HttpPost]
         [Route("api/blog/add")]
         public object AddBlog(Blog blog)

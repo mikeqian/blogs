@@ -18,7 +18,7 @@
 </head>
 <body>
     <div style="margin-bottom: 10px">
-        <input type="text" name="title" id="title" value="@Html.Raw(@ViewBag.Blog.Title)" />
+        <input type="text" name="title" id="title" value="@Html.Raw(@ViewBag.Blog.Title)" style="min-width: 400px" />
     </div>
     <div>
         <script id="editor" type="text/plain" style="width:1024px;height:500px;">
@@ -33,11 +33,22 @@
         var ue = UE.getEditor('editor');
         var id = '@ViewBag.Blog.ID';
 
-        $(function () {
-            var value = '@Html.Raw(ViewBag.Blog.Content)';
-            ue.ready(function () {
-                ue.setContent(value);
-            });
+        function htmlDecode(str) {
+            var _str = '';
+            if (str.length == 0) return '';
+            _str = str.replace(/&/g, '&');
+            _str = _str.replace(/</g, '<'); _str = _str.replace(/>/g, '>');
+            _str = _str.replace(/"/g, '"');
+            return _str;
+        }
+
+        $(function () {      
+            $.get(util.getAbsUrl("api/blog/" + id),
+                function (data) {
+                    ue.ready(function () {
+                        ue.setContent(data.Result.Content);
+                    });
+                });                  
         });
 
         function editBlog() {
